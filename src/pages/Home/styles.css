@@ -1,0 +1,33 @@
+.red-title {
+ color: white;
+ background-color: #e2002f;
+ display: inline-block;
+ border-radius: 6px;
+ margin: 0px 15px;
+}
+
+.red-title h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0px;
+    padding: 6px;
+    font-weight: bold;
+}
+
+.location-box {
+    color: #797979
+}
+
+.location-box h3 {
+    margin: 16px 0px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.documents {
+    margin: 32px 0px
+}
+
+.btn-renew {
+    width: 100%;
+    font-weight: bold;
+}
