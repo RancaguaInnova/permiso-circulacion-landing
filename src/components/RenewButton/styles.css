@@ -1,0 +1,11 @@
+.btn-renew {
+    width: 90%;
+    font-weight: bold;
+}
+
+.btn-image {
+    right: 4%;
+    top: 40px;
+    width: 80px;
+    position: absolute;
+}

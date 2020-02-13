@@ -1,9 +1,9 @@
 .red-title {
- color: white;
- background-color: #e2002f;
- display: inline-block;
- border-radius: 6px;
- margin: 0px 15px;
+    color: white;
+    background-color: #e2002f;
+    display: inline-block;
+    border-radius: 6px;
+    /* margin: 0px 15px; */
 }
 
 .red-title h2 {
@@ -14,20 +14,30 @@
 }
 
 .location-box {
-    color: #797979
+    color: #797979;
 }
 
 .location-box h3 {
-    margin: 16px 0px;
+    /* margin: 16px 0px; */
     font-weight: bold;
     font-size: 1rem;
 }
 
 .documents {
-    margin: 32px 0px
+    margin: 32px 0px;
 }
 
-.btn-renew {
-    width: 100%;
+.location {
+    margin-bottom: 28px
+}
+
+.element-box {
+    margin-bottom: 16px;
+    line-height: 0.9;
+}
+
+.element-date {
+    color: #e2002f;
     font-weight: bold;
+    
 }

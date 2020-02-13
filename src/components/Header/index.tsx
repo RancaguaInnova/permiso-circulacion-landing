@@ -1,12 +1,14 @@
 import React from 'react'
 import './styles.css'
 
-const Loading: React.FC = () => {
+const Header: React.FC = () => {
     return (
         <div className='header-container'>
-            <img className='img-header' src='/assets/images/header.png' />
+            <a href='https://pago.smc.cl/pagoPCVv2/Login.aspx?ReturnUrl=%2fpagopcvv2%2fSistema%2fPrincipal.aspx'>
+                <img className='img-header' src='/assets/images/header.png' />
+            </a>
         </div>
     )
 }
 
-export default Loading
+export default Header
