@@ -1,6 +1,7 @@
 .btn-renew {
     width: 90%;
     font-weight: bold;
+    box-shadow: 4px 4px 4px grey;
 }
 
 .btn-image {
