@@ -4,7 +4,7 @@ import './styles.css'
 const Header: React.FC = () => {
     return (
         <div className='loading'>
-            <img src='/assets/images/loading.gif' />
+            <img className='img-fluid' src='/assets/images/loading.gif' alt='' />
         </div>
     )
 }

@@ -13,7 +13,7 @@ const RenewButton: React.FC = () => {
                         RENUEVA TU PERMISO <br />DE CIRCULACIÓN AQUÍ
                     </a>
                     <a href='https://pago.smc.cl/pagoPCVv2/Login.aspx?ReturnUrl=%2fpagopcvv2%2fSistema%2fPrincipal.aspx'>
-                        <img src='/assets/images/mouse_hand.png' className='btn-image' />
+                        <img src='/assets/images/mouse_hand.png' alt='' className='btn-image' />
                     </a>
                 </div>
             </div>

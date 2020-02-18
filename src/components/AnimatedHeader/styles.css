@@ -1,7 +1,7 @@
 .animated-header-container-day {
     width: 100%;
     height: auto;
-    background: #6dbdd3 url('/assets/images/sky_day_small.png') no-repeat;
+    background: #6dbdd3 url('/assets/images/sky_day_small.png') repeat-y;
     min-height: 400px;
     margin-bottom: 40px;
     position: relative;
@@ -22,17 +22,7 @@
     margin-bottom: -30px;
 }
 
-@keyframes scale {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.1);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
+
 
 @keyframes car-enter {
     0% {
@@ -55,7 +45,19 @@
     animation: car-enter 2s forwards;
 }
 
-.main-btn {
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animated-header .main-btn {
     position: absolute;
     width: 60%;
     top: 50px;

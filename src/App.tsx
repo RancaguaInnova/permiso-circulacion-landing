@@ -1,8 +1,6 @@
 import React, { lazy, Suspense } from 'react'
-import { Route, BrowserRouter as Router, Switch, useLocation } from 'react-router-dom'
-import { isMobile } from 'mobile-device-detect'
-
-import queryString from 'query-string'
+import { Route, Switch } from 'react-router-dom'
+import { isMobile, isTablet } from 'mobile-device-detect'
 
 import Header from 'components/Header'
 import AnimatedHeader from 'components/AnimatedHeader'
@@ -14,15 +12,14 @@ import './App.css'
 const Home = lazy(() => import('pages/Home'))
 
 const App: React.FC = () => {
-    const qry = useQuery()
-    console.log('qry', qry)
+    console.log('isTablet', isTablet)
     return (
         <div className='App'>
             <Suspense fallback={<Loading />}>
-                {isMobile ? <AnimatedHeader params={qry} /> : <Header />}
+                {!isTablet && isMobile ? <AnimatedHeader mobile={isMobile} /> : <Header />}
 
                 <Switch>
-                    <Route path='/'>
+                    <Route path='/' default>
                         <Home />
                     </Route>
                 </Switch>
@@ -31,10 +28,6 @@ const App: React.FC = () => {
             </Suspense>
         </div>
     )
-}
-
-const useQuery = () => {
-    return queryString.parse(useLocation().search)
 }
 
 export default App

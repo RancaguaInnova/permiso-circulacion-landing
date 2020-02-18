@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles.css'
-
+import { isMobile } from 'mobile-device-detect'
 import RenewButton from 'components/RenewButton'
 
 import Hours from './hours'
@@ -12,6 +12,7 @@ const Home: React.FC = () => {
             <Hours />
             <Documents />
             <RenewButton />
+            {isMobile && <img className='img-fluid' alt='' src='/assets/images/pay_info.png' />}
         </div>
     )
 }
