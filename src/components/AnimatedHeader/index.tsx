@@ -23,7 +23,7 @@ const AnimatedHeader: React.FC<Props> = ({ mobile }) => {
 
     return (
         <div className={`animated-header-container${time} animated-header`}>
-            <a href='https://pago.smc.cl/pagoPCVv2/Login.aspx?ReturnUrl=%2fpagopcvv2%2fSistema%2fPrincipal.aspx'>
+            <a href='http://pago.smc.cl/pagopcvv2/muni/RANCAGUA.aspx'>
                 <img className='main-btn' src='/assets/images/main_button.png' alt='' />
                 <img className='car' src='/assets/images/car_day.png' alt='' />
                 <img className='img-city-small' src={`/assets/images/city${time}_small.png`} alt='' />
